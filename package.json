@@ -1,0 +1,22 @@
+{
+  "name": "z-blog",
+  "version": "1.0.0",
+  "description": "a personal blog",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fdzqz/Z-blog.git"
+  },
+  "author": "fdzqz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fdzqz/Z-blog/issues"
+  },
+  "homepage": "https://github.com/fdzqz/Z-blog#readme",
+  "devDependencies": {
+    "webpack": "^1.14.0"
+  }
+}

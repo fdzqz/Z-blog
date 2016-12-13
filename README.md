@@ -17,6 +17,7 @@
 
 - lib：
 - models：
+- app：
 - public：
 - middlewares：
 - routes：
@@ -25,6 +26,7 @@
 
 ## 开发环境
 - 文件配置（webpack，babel）
+    - 学会使用webpack-dev-server
 - 依赖安装
 
 ## 页面功能

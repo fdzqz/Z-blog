@@ -36,6 +36,7 @@ mongod --dbpath D:/mongodb/data
 3 现在就可以使用`npm start`启动服务器了
 
 **第三步：访问**
+
 1 在浏览器输入`localhost:3000`访问这个个人博客了
 
 
@@ -50,6 +51,8 @@ mongod --dbpath D:/mongodb/data
 - webpack.config.pro.js：webpack生产环境打包文件，使用`npm run pro`打开。
 - .babelrc：babel配置文件。
 - app.js：项目入口 文件。
+- config：配置文件。
+- book：完成项目过程中写的博文。
 
 - M
   - lib：数据库模型数据定义。
@@ -63,10 +66,6 @@ mongod --dbpath D:/mongodb/data
 - C
   - middlewares：存放中间件。
   - routes：在index.js里写页面路由，其它写接口路由。
-
-- others
-  - config：配置文件。
-  - book：完成项目过程中写的博文。
 
 
 ## 开发环境

@@ -13,15 +13,24 @@
 - .gitignore：
 - webpack.config.dev.js + webpack.config.pro.js：
 - .babelrc：
-- index.js：
-- lib：
-- models：
-- app：
-- public：
-- middlewares：
-- routes：
-- config：
-- book：
+- app.js：
+
+- M
+  - lib：
+  - models：
+
+- V
+  - app：
+  - public：
+  - build：
+
+- C
+  - middlewares：
+  - routes：
+
+- others
+  - config：数据设置
+  - book：
 
 ## 开发环境
 - 文件配置（webpack，babel）
@@ -39,5 +48,10 @@
 - 登录注册页
 
 ## 前端开发（评论功能使用多说）
+
+## 开发思路
+- 项目结构参照N-blog
+- 代码格式参考son
+- 后台路由分开写
 
 

@@ -4,8 +4,9 @@
   "description": "a personal blog",
   "main": "app.js",
   "scripts": {
-    "start": "set NODE_ENV=development && webpack --config ./webpack.config.pro.js --progress --colors && node app.js",
-    "dev": "set NODE_ENV=development && webpack-dev-server --inline --hot --config ./webpack.config.dev.js --progress --colors"
+    "start": "node app.js",
+    "dev": "set NODE_ENV=development && webpack-dev-server --inline --hot --config ./webpack.config.dev.js --progress --colors",
+    "pro": "NODE_ENV=production webpack --config ./webpack.config.pro.js --progress"
   },
   "author": "fdzqz",
   "license": "ISC",

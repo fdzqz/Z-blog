@@ -59,7 +59,13 @@ mongod --dbpath D:/mongodb/data
   - models：数据库模型操作方法。
 
 - V
-  - app：存放构建前的前端文件。
+  - src：存放构建前的前端文件。
+      - js
+          - index.js
+          - containers
+          - conponents
+          - actions
+          - reducers
   - public：存放生产环境的前端构建文件。
   - build：存放开发环境的前端构建文件。
 
@@ -87,12 +93,20 @@ mongod --dbpath D:/mongodb/data
 
 ## 开发思路
 
+- 顺序
+  - 登录
+  - 后台管理
+
 - 开发
   - 前后端同时进行，写完一张页面的前端功能后便写它的后台功能。
 
 - 前端
   - 在app使用redux架构，把前端应用架构好。
   - 后台路由分开写。
+  - redux
+      - actions
+      - stores-存放单应用中的state
+      - reducers
 
 - 后台
   - 数据库采用mongodb，数据和方法要分开。

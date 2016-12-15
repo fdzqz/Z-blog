@@ -1,22 +1,22 @@
+/**
+ * Created by zqz on 16-12-15
+ */
 import React from 'react'
 import { render } from 'react-dom'
-import { Router, Route, IndexRoute, Link, IndexLink, browserHistory, hashHistory } from 'react-router'
-import { Provider } from 'react-redux'
-// import { Router, Route, IndexRoute, Link, IndexLink, browserHistory, hashHistory } from 'react-router'
-// import thunkMiddleware from 'redux-thunk'
-// import { Provider, connect } from 'react-redux'
-// import { combineReducers, createStore, applyMiddleware } from 'redux'
-// import * as actions from './js/actions/index'
+import { Router, Route, IndexRoute, browserHistory, routes } from 'react-router'
+// import { createStore } from 'redux'
+// import { Provider } from 'react-redux'
+
+import App from './js/containers/app.jsx'
+import Login from './js/containers/login.jsx'
+import ArticleList from './js/containers/articleList.jsx'
 
 render(
-    <Provider store={store}>
-        <Router history={browserHistory}>
-            <Route path="/" component={App}>
-                <IndexRoute component={ArticleList}/>
-                <Route path="/login" component={Login} onEnter={loginRequireAuth}/>
-                <Route path="/qr" component={Qr} onEnter={!loginRequireAuth}/>
-            </Route>
-        </Router>
-    </Provider>,
+    <Router history={browserHistory} routes={routes}>
+        <Route path='/' component={App}>
+            <IndexRoute component={Login} />
+            <Route path='articleList' component={ArticleList} />
+        </Route>
+    </Router>,
     document.getElementById('root')
 )

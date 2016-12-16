@@ -1,0 +1,53 @@
+.articleWrap {
+    width: 100%;
+    overflow: hidden;
+}
+
+.article {
+    width: 100%;
+    height: 590px;
+    padding-top: 30px;
+    background-color: #f0f0dc;
+}
+
+.artHea {
+    width: 950px;
+    height: 50px;
+    /*border-bottom: 1px dashed #b4b4b4;*/
+    border-bottom: 1px solid #b4b4b4;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.artTit {
+    float: left;
+    padding: 0;
+    margin: 0;
+    line-height: 50px;
+    /*border-bottom: 1px dashed #b4b4b4;*/
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #8c8c78;
+}
+
+.artDate {
+    display: block;
+    float: right;
+    padding-top: 20px;
+    /*line-height: 50px;*/
+    font-size: 16px;
+    font-weight: 700;
+    color: #8c8c78;
+}
+
+.artCon {
+    width: 950px;
+    margin: 0 auto;
+}
+
+.artConDet {
+    font-size: 16px;
+    letter-spacing: 2px;
+    color: #8c8c78;
+}

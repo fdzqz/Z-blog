@@ -7,6 +7,68 @@
 
 .login {
     width: 100%;
-    min-height: 600px;
+    min-height: 470px;
+    padding-top: 130px;
     background-color: #f0f0dc;
+}
+
+.logTit {
+    width: 370px;
+    line-height: 50px;
+    margin: 0 auto;
+    /*margin-top: 50px;*/
+    border-bottom: 1px dashed #b4b4b4;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #8c8c78;
+}
+
+.logForm {
+    width: 370px;
+    margin: 0 auto;
+}
+
+.logItem {
+    width: 370px;
+    padding: 0;
+    margin: 0;
+    margin-top: 22px
+}
+
+.logLab {
+    display: block;
+    font-size: 16px;
+    /*color: #b48c50;*/
+    color: #a0a0a0;
+}
+
+.logInp {
+    padding: 0;
+    padding-left: 10px;
+    margin: 0;
+    margin-top: 10px;
+    width: 360px;
+    height: 30px;
+    line-height: 60px;
+    border: 1px solid #a0a0a0;
+    font-size: 15px;
+    color: #a0a0a0;
+}
+
+.subBtn {
+    display: block;
+    padding: 0;
+    /*margin: 0 auto;*/
+    margin-top: 50px;
+    /*margin-left: 30px;*/
+    width: 60px;
+    height: 30px;
+    border: 0;
+    border-radius: 5px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    background-color: #a0a08c;
+    color: #f0f0dc;
+    cursor: pointer;
 }

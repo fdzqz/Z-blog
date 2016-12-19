@@ -6,8 +6,9 @@ import { Link } from 'react-router'
 
 // import indexSelector from '../selectors/indexSelector'
 
-class Sidebar extends React.Component {
+export default class Sidebar extends React.Component {
     render() {
+        const { isLogin, user } = this.props
         return (
             <div className={styles.sidebarWrap}>
                 <div className={styles.sidebar}>
@@ -22,11 +23,16 @@ class Sidebar extends React.Component {
                             <Link className={styles.navLinkItem} to='/adArticleList'>博文</Link> |
                             <a className={styles.navLinkItem} href='https://github.com/fdzqz'>简历</a>
                         </p>
-                        <p className={styles.perLink}>
-                            <Link className={styles.perLinkItem} to='/adArticleList'>博文管理</Link> |
-                            <a className={styles.perLinkItem} href='https://github.com/fdzqz'>fdzqz</a> |
-                            <a className={styles.perLinkItem} href='https://github.com/fdzqz'>注销</a>
-                        </p>
+                        {isLogin
+                            ?<p className={styles.perLink}>
+                                <Link className={styles.perLinkItem} to='/adArticleList'>博文管理</Link> |
+                                <a className={styles.perLinkItem} href='https://github.com/fdzqz'>fdzqz</a> |
+                                <a className={styles.perLinkItem} href='https://github.com/fdzqz'>注销</a>
+                            </p>
+                            :<p className={styles.perLink}>
+                                <Link className={styles.perLinkItem} to='/login'>登录</Link>
+                            </p>
+                        }
                     </div>
                 </div>
             </div>
@@ -34,23 +40,25 @@ class Sidebar extends React.Component {
     }
 }
 
-// App.propTypes = {
-//     isLogin: React.PropTypes.bool.isRequired
-// }
-
 // const mapStateToProps = (state) => {
-//     //
+//     return {
+//         isLogin: state.login.isLogin,
+//         user: state.login.user
+//     }
 // }
 
 // const mapDispatchToProps = (dispatch) => {
-//     onTodoClick: (id) => {
-//         dispatch(toggleTodo(id))
-//     }
+//   return {
+//     onIncrement: () => dispatch(increment())
+//   };
+// }
+
+// Sidebar.propTypes = {
+//     isLogin: React.PropTypes.bool.isRequired,
+//     isLogining: React.PropTypes.bool.isRequired
 // }
 
 // export default connect(
 //     mapStateToProps,
 //     mapDispatchToProps
-// )(App)
-
-export default Sidebar
+// )(Sidebar)
